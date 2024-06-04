@@ -42,7 +42,7 @@ echo "Starting $NUM_INSTANCES direwolf instances"
 echo "Sample rate: $SAMPLE"
 
 # Start each direwolf instance
-for ((i = 0, i < $NUM_INSTANCES; i++)); do
+for ((i = 0; i < $NUM_INSTANCES; i++)); do
     # Variables
     AGWPORT=$((INIT_AGWPORT + (i * 1000)))
     KISSPORT=$((INIT_KISSPORT + (i * 1000)))
